@@ -26,6 +26,7 @@
   
   // Do view setup here.
   _rootView = [[RootView alloc] initWithFrame:self.view.frame];
+  _rootView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
   [self.view addSubview:_rootView];
   
 
