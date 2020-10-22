@@ -11,6 +11,11 @@
 		A27449F92541E724003EDB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27449F82541E724003EDB3A /* Assets.xcassets */; };
 		A27449FC2541E724003EDB3A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27449FA2541E724003EDB3A /* MainMenu.xib */; };
 		A27449FF2541E724003EDB3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A27449FE2541E724003EDB3A /* main.m */; };
+		A2744A092541E928003EDB3A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2744A072541E928003EDB3A /* MainViewController.m */; };
+		A2744A0A2541E928003EDB3A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2744A082541E928003EDB3A /* MainViewController.xib */; };
+		A2744A0D2541F4D9003EDB3A /* PointerConsumingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2744A0C2541F4D9003EDB3A /* PointerConsumingView.m */; };
+		A2744A102541F722003EDB3A /* PointerForwardingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2744A0F2541F722003EDB3A /* PointerForwardingView.m */; };
+		A2744A132541F89E003EDB3A /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2744A122541F89E003EDB3A /* RootView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,15 @@
 		A27449FD2541E724003EDB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27449FE2541E724003EDB3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2744A002541E724003EDB3A /* PVPointerEvents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PVPointerEvents.entitlements; sourceTree = "<group>"; };
+		A2744A062541E928003EDB3A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A2744A072541E928003EDB3A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A2744A082541E928003EDB3A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A2744A0B2541F4D9003EDB3A /* PointerConsumingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerConsumingView.h; sourceTree = "<group>"; };
+		A2744A0C2541F4D9003EDB3A /* PointerConsumingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerConsumingView.m; sourceTree = "<group>"; };
+		A2744A0E2541F722003EDB3A /* PointerForwardingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointerForwardingView.h; sourceTree = "<group>"; };
+		A2744A0F2541F722003EDB3A /* PointerForwardingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointerForwardingView.m; sourceTree = "<group>"; };
+		A2744A112541F89E003EDB3A /* RootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		A2744A122541F89E003EDB3A /* RootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,15 @@
 			children = (
 				A27449F52541E722003EDB3A /* AppDelegate.h */,
 				A27449F62541E722003EDB3A /* AppDelegate.m */,
+				A2744A062541E928003EDB3A /* MainViewController.h */,
+				A2744A072541E928003EDB3A /* MainViewController.m */,
+				A2744A112541F89E003EDB3A /* RootView.h */,
+				A2744A122541F89E003EDB3A /* RootView.m */,
+				A2744A082541E928003EDB3A /* MainViewController.xib */,
+				A2744A0B2541F4D9003EDB3A /* PointerConsumingView.h */,
+				A2744A0E2541F722003EDB3A /* PointerForwardingView.h */,
+				A2744A0F2541F722003EDB3A /* PointerForwardingView.m */,
+				A2744A0C2541F4D9003EDB3A /* PointerConsumingView.m */,
 				A27449F82541E724003EDB3A /* Assets.xcassets */,
 				A27449FA2541E724003EDB3A /* MainMenu.xib */,
 				A27449FD2541E724003EDB3A /* Info.plist */,
@@ -123,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27449F92541E724003EDB3A /* Assets.xcassets in Resources */,
+				A2744A0A2541E928003EDB3A /* MainViewController.xib in Resources */,
 				A27449FC2541E724003EDB3A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2744A0D2541F4D9003EDB3A /* PointerConsumingView.m in Sources */,
 				A27449FF2541E724003EDB3A /* main.m in Sources */,
+				A2744A092541E928003EDB3A /* MainViewController.m in Sources */,
 				A27449F72541E722003EDB3A /* AppDelegate.m in Sources */,
+				A2744A132541F89E003EDB3A /* RootView.m in Sources */,
+				A2744A102541F722003EDB3A /* PointerForwardingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
